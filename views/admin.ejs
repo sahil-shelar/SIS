@@ -1,0 +1,21 @@
+<!-- admin.ejs -->
+<html>
+  <body style="background-color: #ffdab9;">
+<form action="/admin/upload" method="post" enctype="multipart/form-data">
+    <label for="rollNumber">Roll Number:</label>
+    <select id="rollNumber" name="rollNumber">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select><br><br>
+  
+    <!-- Update the name of the file input field to match the multer middleware -->
+    <label for="file">Marksheet:</label>
+    <input type="file" id="file" name="file" required><br><br>
+  
+    <input type="submit" value="Upload">
+  </form>
+</body>
+</html>

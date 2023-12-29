@@ -1,0 +1,30 @@
+<!-- register.ejs -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Add any necessary CSS or external stylesheets here -->
+</head>
+<body>
+    <h1>Register</h1>
+    <form action="/register" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <label for="role">Role:</label>
+        <select id="role" name="role" required>
+            <option value="" disabled selected>Select Role</option>
+            <option value="staff">Staff</option>
+            <option value="student">Student</option>
+            <option value="admin">Admin</option>
+        </select>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

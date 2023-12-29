@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body style="background-color: #ffdab9;">
+  <h1 style="background-color: #deb887; width: 11vw; padding: 5px; margin: 20px 5px;">Login Page</h1>
+  <div style="border: 5px solid rgb(192, 140, 50); padding: 10px;border-radius: 10px; height: 25vh;width:20vw;margin: 5px 5px;">
+    <form action="/login" method="post" >
+      <h2>Admin Login</h2>
+      <input type="hidden" name="role" value="admin">
+      <label for="">Username: </label>
+      <input type="text" name="username" placeholder="Username" required><br><br>
+      <label for="">Password: </label>
+      <input type="password" name="password" placeholder="Password" required><br><br>
+      <button type="submit">Login</button><br><br>
+    </form>
+  </div>
+  <div style="border: 5px solid rgb(192, 140, 50); padding: 10px;border-radius: 10px; height: 25vh;width:20vw;margin: 5px 5px;">
+    <form action="/login" method="post">
+      <h2>Staff Login</h2>
+      <input type="hidden" name="role" value="staff"> <!-- Corrected role value -->
+      <label for="">Username: </label>
+      <input type="text" name="username" placeholder="Username" required><br><br>
+      <label for="">Password: </label>
+      <input type="password" name="password" placeholder="Password" required><br><br>
+      <button type="submit">Login</button><br><br>
+    </form>
+  </div>
+
+  <div style="border: 5px solid rgb(192, 140, 50); padding: 10px;border-radius: 10px; height: 25vh;width:20vw;">
+    <form action="/login" method="post">
+      <h2>Student Login</h2>
+      <input type="hidden" name="role" value="student"> <!-- Corrected role value -->
+      <label for="">Username: </label>
+      <input type="text" name="username" placeholder="Username" required><br><br>
+      <label for="">Password: </label>
+      <input type="password" name="password" placeholder="Password" required><br><br>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+</body>
+</html>

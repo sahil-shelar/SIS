@@ -1,0 +1,35 @@
+<!-- Admin form -->
+<form action="/admin/upload" method="post" enctype="multipart/form-data">
+  <label for="rollNumber">Roll Number:</label>
+  <select id="rollNumber" name="rollNumber">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select><br><br>
+
+  <label for="marksheet">Marksheet:</label>
+  <input type="file" id="marksheet" name="file" required><br><br>
+
+  <input type="submit" value="Upload">
+</form>
+
+<!-- Staff form -->
+<form action="/staff/upload" method="post" enctype="multipart/form-data">
+  <label for="rollNumber">Roll Number:</label>
+  <select id="rollNumber" name="rollNumber">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select><br><br>
+
+  <label for="certificate">Certificate:</label>
+  <input type="file" id="certificate" name="file" required><br><br>
+
+  <input type="submit" value="Upload"><br><br>
+  <label for="remark">Remark: </label><br>
+  <textarea id="remark" name="remark" cols="30" rows="10">Add Remark</textarea>
+</form>
